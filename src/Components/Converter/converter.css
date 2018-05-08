@@ -1,0 +1,96 @@
+body {
+    background: url('../../img/bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 60%;
+    background: rgba(165, 78, 15, 0.55);
+    border-radius: 30px;
+    margin-top: 100px;
+}
+
+.main_header{
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.in, .out {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    color: rgba(140, 82, 9, 0.85);
+    text-shadow: 1px 1px 1px black;  
+}
+
+input, select {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #301c07;
+    border-radius: 2px;
+    font-family: Verdana;
+    box-shadow: 0 0 5px #231201;
+    outline: none;
+    color: black;
+    font-weight: bold;
+}
+
+input {
+    background: rgba(173, 103, 29, 0.40);
+}
+
+select {
+    background: rgba(186, 101, 13, 0.15);
+    font-weight: bold;
+    color: black;
+}
+
+#button {
+    background: rgba(66, 35, 3, 0.55);
+    margin-top: 100px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+#button:hover {
+    background: rgba(124, 66, 6, 0.55);
+}
+
+#button:active {
+    background: rgba(51, 111, 206, 0.35);
+}
+
+@media screen and (max-width: 768px) {    
+    .all {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {    
+    .main {
+        width: 100%;
+    }
+}
